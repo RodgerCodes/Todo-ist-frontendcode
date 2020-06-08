@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inner.css">
+    <script src="https://kit.fontawesome.com/58a41967c5.js" crossorigin="anonymous"></script>
+    <title>Todo-ist</title>
+</head>
+<body>
+    <header>
+        <div>
+            <svg width="30" height="30" id="svg">
+                <path d="M0,5 25,5" stroke="#000" stroke-width="4" />
+                <path d="M0,14 20,14" stroke="#000" stroke-width="4" />
+                <path d="M0,23 40,23" stroke="#000" stroke-width="4" />
+                </svg>
+        </div>
+        <div id="side-menu" class="side-nav">
+           <a href="#" class="close">&times;</a>
+           <a href="">Todos</a>
+           <a href="">Projects</a>
+           <a href="">Goals</a>
+        </div>
+        <div class="links">
+            <h3>name</h3>
+            <hr>
+            <ul>
+               <li><a href="">Todos</a></li>
+               <li><a href="">Projects</a></li>
+               <li><a href="">Goals</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="todos">
+        <div class="todo">
+            <p>
+                <input type="radio" class="radio">
+                Lorem ipsum dolor sit amet.wskadnkjand
+            </p>
+            <form action="">
+                <button class="del"><i class="fas fa-trash"></i></button>
+            </form>
+        </div>
+        
+        <hr>
+       
+
+        <form class="form" action="" method="POST">
+            <input type="text" name="todo">
+            <input type="submit" value="add">
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

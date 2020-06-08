@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Rubik-Regular';
+    src: url('./assets/fonts/Rubik-Regular.ttf');
+}
+
+body{
+    font-family: 'Rubik-Regular';
+    background: rgb(4, 128, 211);
+}
+
+header{
+ height: 90px;
+}
+
+.side-nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(21, 21, 44);
+    opacity: 1;
+    overflow-x: hidden;
+    padding: 30px 0 0 0;
+    transition: 0.5s;
+    width: 0;
+    z-index: 3;
+  }
+
+ 
+ 
+  .side-nav a {
+    padding: 5px 10px 5px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+ 
+ 
+   .side-nav .btn-close {
+     position: absolute;
+     top: 0;
+     left: 5px;
+     font-size: 36px;
+     margin-right: 50px;
+   }
+
+ #svg{
+     margin: 8px 10px;
+   cursor: pointer;
+ }
+
+ .links{
+     display: none;
+ }
+
+ /* section todos */
+ .todos .form{
+   position: fixed;
+   bottom: 2%;
+   z-index: 1;
+   margin: 5px auto;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+ }
+
+
+ .todos form input[type="text"]{
+     width: 280px;
+     height: 45px;
+     border-radius: 20px;
+     margin: 0 3px;
+ }
+
+ .todos form input[type="submit"]{
+     border: none;
+     background: #fff;
+     color: rgb(4, 128, 211);
+     padding: 8px 8px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+ }
+
+ .todos form input[type="submit"]:hover{
+  transform: scale(1.1);
+ }
+
+ .todos p{
+     text-decoration: none;
+     margin: 10px 0;
+     padding: 0 10px;
+     font-size: 1.3em;
+     width: 100%;
+     color: #fff;
+ }
+
+ .todos .radio{
+     width: 30px;
+     height: 20px;
+ }
+
+ .todos > div{
+      display: flex;
+      flex-direction: row;
+ }
+
+ .todos  .del {
+     border: none;
+    color: #fff;
+    background: rgb(4, 128, 211);
+     padding: 2px 7px;
+     font-weight: bold;
+     font-size: 1.2em;
+     margin: 10px 10px;
+     cursor: pointer;
+ }
+
+ @media Screen and (min-width:500px){
+    .todos form input[type="text"]{
+         width: 500px;
+    }
+ }
+
+ @media Screen and (min-width:620px){
+     #svg{
+         display: none;
+         pointer-events: none;
+     }
+
+     .links{
+         display: block;
+         height: 100vh;
+         width: 230px;
+         background: #fff;
+         position: relative;
+     }
+
+     .links ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     }
+
+     .links h3{
+
+       padding: 30px 20px;
+     }
+
+     .links li {
+         display: flex;
+         flex-direction: column;
+         align-items: center;        
+     }
+
+     .links a{
+         text-decoration: none;
+         color: #000;
+         align-self: center;
+         margin: 20px 0;
+         font-size: 1.4em;
+         font-weight: bold;
+         
+     }
+
+     .todos{
+         position: absolute;
+         left: 32%;
+     }
+     .todos .form{
+         left: 65%;
+         margin: 0 0;
+     }
+     .todos form input[type="text"]{
+         width: 400px;
+     }
+ }
+
+ @media Screen and (min-width:800px){
+    .todos form input[type="text"]{
+        width: 500px;
+    }
+
+    .todos .form{
+        left: 60%;
+    }
+ }
+
+ @media Screen and (min-width:960px){
+    .todos form input[type="text"]{
+        width: 700px;
+    }
+ }
+
+ @media Screen and (min-width:1200px){
+    .todos form input[type="text"]{
+        width: 1000px;
+    }
+
+    .todos{
+        left: 20%;
+    }
+ }
