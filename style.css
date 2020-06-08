@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik-Regular';
+    background: rgb(0, 162, 255);
+    position: relative;
+    overflow: hidden;
+}
+
+@font-face{
+    font-family: 'Rubik-Regular';
+    src: url('./assets/fonts/Rubik-Regular.ttf');
+};
+
+.login{
+ width: 300px;
+ height: 300px;
+}
+
+.login form{
+ position: absolute;
+ left: 50%;
+ top: 10rem;
+ transform: translateX(-50%);
+ background: #fff;
+ padding: 20px 20px;
+ box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.login form > div input{
+    width: 300px;
+    height: 40px;
+    margin: 5px 0;
+}
+
+.login form > div label{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+.login form input[type="submit"], .register form input[type="submit"]{
+    border: none;
+    padding: 7px 15px;
+    color: #fff;
+    background: #2600ff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px auto;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.2), 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login form input[type="submit"]:hover, .register form input[type="submit"]:hover{
+   transform: scale(1.1);
+} 
+.login a{
+    position: absolute;
+    top: 15rem;
+}
+
+/* register */
+.register {
+    width: 400px;
+    height: 200px;
+}
+
+.register form{
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 20px;
+    top: 7rem;
+   box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.register form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.register form > div input{
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.register form > div label {
+    font-weight: bold;
+}
+
+
